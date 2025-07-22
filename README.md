@@ -43,3 +43,17 @@
 5. Enjoy browsing!
 
 ---
+
+## ✨ Future Improvements (Suggestions)
+
+- Add support for bookmarks & download manager
+- Implement incognito mode
+- Customize WebView settings further
+- Improve UI/UX design with animations
+
+---
+
+## 🧑‍💻 Author
+
+Developed by **Khizar Ameer.**  
+📧 For suggestions or collaborations, feel free to reach out.
