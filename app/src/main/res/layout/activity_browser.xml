@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- URL Bar -->
+    <LinearLayout
+        android:id="@+id/urlBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/etWebUrl"
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:hint="    Enter url"
+            android:inputType="textUri"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <ImageButton
+            android:id="@+id/btnGoWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="Go"
+            android:background="@android:color/transparent"
+            android:tint="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_below="@id/urlBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#1F1F1F">
+
+        <Button android:id="@+id/btnBack"
+            android:text="◀"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF" />
+
+        <Button android:id="@+id/btnForward"
+            android:text="▶"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF" />
+
+        <Button android:id="@+id/btnReload"
+            android:text="⟳"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF" />
+
+        <Button android:id="@+id/btnStop"
+            android:text="✖"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- WebView -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

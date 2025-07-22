@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp">
+
+        <Button android:id="@+id/btnBack"
+            android:text="◀"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button android:id="@+id/btnForward"
+
+            android:text="▶"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF" />
+        <!-- Three dots menu button -->
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="#333333"
+            android:contentDescription="Menu"
+            android:padding="8dp"
+            android:src="@drawable/ic_dots" />
+    </LinearLayout>
+
+    <!-- Logo & Name -->
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_compass"
+        android:layout_gravity="center"
+        android:backgroundTint="#333333"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:text="KAC's Browser"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp" />
+
+    <!-- URL Input -->
+    <EditText
+        android:id="@+id/etUrl"
+        android:hint="Enter URL"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:inputType="textUri"
+        android:background="@drawable/rounded_bg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:text="Enter URL"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#1F1F1F"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <!-- Shortcut Icons -->
+    <LinearLayout
+        android:id="@+id/shortcutIcons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:contentDescription="Facebook"
+            android:src="@drawable/ic_facebook"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnGitHub"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:contentDescription="GitHub"
+            android:src="@drawable/ic_github"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnLinkedIn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:contentDescription="LinkedIn"
+            android:src="@drawable/ic_linkedin"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnReddit"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:contentDescription="Reddit"
+            android:src="@drawable/ic_reddit" />
+    </LinearLayout>
+
+
+</LinearLayout>
